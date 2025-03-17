@@ -17,7 +17,9 @@ class NestedTransactionCache<K, V> implements Cache<K, V> {
     public void put(K key, V value) {
         if (!transactionStack.isEmpty()) {
             V oldValue = cache.get(key);
-            transactionStack.peek().push(new PutCommand<>(key, value, oldValue));
+            if (transactionStack.peek() != null) {
+                transactionStack.peek().push(new PutCommand<>(key, value, oldValue));
+            }
         }
         cache.put(key, value);
     }
@@ -26,7 +28,9 @@ class NestedTransactionCache<K, V> implements Cache<K, V> {
     public void delete(K key) {
         if (!transactionStack.isEmpty()) {
             V oldValue = cache.get(key);
-            transactionStack.peek().push(new DeleteCommand<>(key, oldValue));
+            if (transactionStack.peek() != null) {
+                transactionStack.peek().push(new DeleteCommand<>(key, oldValue));
+            }
         }
         cache.remove(key);
     }
@@ -60,5 +64,6 @@ class NestedTransactionCache<K, V> implements Cache<K, V> {
             }
         }
     }
+
 
 }

@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f803ed1c-ea3a-4137-80f0-60320834f1ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/cache/NestedTransactionCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/cache/NestedTransactionCacheTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/cache/PerpexilityTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/cache/PerpexilityTransactionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/cache/NestedTransactionCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/cache/NestedTransactionCache.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <recent name="org.cache" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.NestedTransactionCacheTest.testMultipleNestedTransactionsWithCommitAndRollback">
+  <component name="RunManager" selected="Gradle.PerpexilityTransactionTest">
     <configuration name="NestedTransactionCacheTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -147,6 +147,30 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="PerpexilityTransactionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.cache.PerpexilityTransactionTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="TransactionalCacheTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -171,37 +195,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TransactionalCacheTest.testTransactionCommitAppliesChanges" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.cache.TransactionalCacheTest.testTransactionCommitAppliesChanges&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PerpexilityTransactionTest" />
         <item itemvalue="Gradle.NestedTransactionCacheTest.testMultipleNestedTransactionsWithCommitAndRollback" />
         <item itemvalue="Gradle.NestedTransactionCacheTest" />
         <item itemvalue="Gradle.NestedTransactionCacheTest.testMultipleNestedTransactionsWithCommitAndRollback1" />
         <item itemvalue="Gradle.TransactionalCacheTest" />
-        <item itemvalue="Gradle.TransactionalCacheTest.testTransactionCommitAppliesChanges" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +213,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1741974168504</updated>
-      <workItem from="1741974170096" duration="2066000" />
+      <workItem from="1741974170096" duration="4438000" />
     </task>
     <servers />
   </component>
